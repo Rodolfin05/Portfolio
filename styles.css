@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+}
+
+
+h1 {
+    font-size: 45px;
+    color: #2e80fa;
+}
+
+h2 {
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+span {
+    color: #2e80fa;
+    font-size: 35px;
+}
+
+body {
+    background-color: #232a44;
+    color: #ffffff;
+}
+
+header h1{
+    color: #ffffff;
+    font-size: 35px;
+}
+
+header .interface{
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .navegacao {
+    display: flex;
+}
+
+.navegacao a{
+    color: #ffffff;
+    margin-left: 50px;
+    transition: 0.5s;
+}
+
+.navegacao a:hover {
+    color: #2e80fa;
+}
+
+.flex{
+    display: flex;
+    gap: 60px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inicio .interface{
+    padding: 200px 100px;
+}
+
+.inicio i{
+    color:#2e80fa;
+    margin-right: 40px;
+}
+
+.inicio .imagemInicio img {
+    width: 250px;
+    border-radius: 200px;
+    box-shadow: 0px 0px 20px #2e80fa;
+}
+
+.sobreMim .interface {
+    padding: 200px;
+    align-items: center;
+}
+
+.sobreMim .imagemSobreMim img {
+    width: 300px;
+    border-radius: 40px;
+}
+
+.sobreMim .textoSobreMim {
+    width: 40%;
+}
+
+.sobreMim p {
+    font-size: 20px;
+}
+
+.projetos {
+    text-align: center;
+    padding: 200px;
+}
+
+.projetos .interface{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.interface .projetoBox {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem #061444;
+    overflow: hidden;
+    display: flex;
+}
+
+.projetoBox img {
+    width: 100%;
+    transition: 0.5s ease;
+    opacity: 0.7;
+}
+
+.projetoBox img:hover{
+    transform: scale(1.1);
+}
+
+.projetoBox .projetoLayer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0.4rem;
+    transform: translateY(100%);
+    transition: 0.5s ease;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.projetoBox:hover .projetoLayer {
+    transform: translateY(0);
+}
+
+.projetoLayer h4{
+    font-size: 30px;
+}
+
+.projetoLayer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.contato {
+    padding: 200px;
+}
+
+.contato h2{
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.contato form {
+    max-width: 50rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contato form .inputBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contato form .inputBox input, .contato form textarea {
+    width: 97%;
+    padding: 1.5rem;
+    font-size: 20px;
+    color: #ffffff;
+    background: #1e2238;
+    border-radius: 20px;
+    margin: 0.7rem;
+}
+
+.contato form textarea{
+    resize: none;
+}
+
+.contato form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+    background: #2e80fa;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.contato form .btn:hover {
+    transform: scale(1.05);
+    background: #1350aa;
+}
+
+footer {
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 45px;
+    color: #2e80fa;
+}
+
+h2 {
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+span {
+    color: #2e80fa;
+    font-size: 35px;
+}
+
+body {
+    background-color: #232a44;
+    color: #ffffff;
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 35px;
+}
+
+header .interface {
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+header .navegacao {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.navegacao a {
+    color: #ffffff;
+    margin-left: 50px;
+    transition: 0.5s;
+}
+
+.navegacao a:hover {
+    color: #2e80fa;
+}
+
+.flex {
+    display: flex;
+    gap: 60px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.inicio .interface {
+    padding: 200px 100px;
+}
+
+.inicio i {
+    color: #2e80fa;
+    margin-right: 40px;
+}
+
+.inicio .imagemInicio img {
+    width: 250px;
+    border-radius: 200px;
+    box-shadow: 0px 0px 20px #2e80fa;
+}
+
+.sobreMim .interface {
+    padding: 200px;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.sobreMim .imagemSobreMim img {
+    width: 300px;
+    border-radius: 40px;
+}
+
+.sobreMim .textoSobreMim {
+    width: 40%;
+}
+
+.sobreMim p {
+    font-size: 20px;
+}
+
+.projetos {
+    text-align: center;
+    padding: 200px;
+}
+
+.projetos .interface {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.interface .projetoBox {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem #061444;
+    overflow: hidden;
+    display: flex;
+}
+
+.projetoBox img {
+    width: 100%;
+    transition: 0.5s ease;
+    opacity: 0.7;
+}
+
+.projetoBox img:hover {
+    transform: scale(1.1);
+}
+
+.projetoBox .projetoLayer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0.4rem;
+    transform: translateY(100%);
+    transition: 0.5s ease;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.projetoBox:hover .projetoLayer {
+    transform: translateY(0);
+}
+
+.projetoLayer h4 {
+    font-size: 30px;
+}
+
+.projetoLayer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.contato {
+    padding: 200px;
+}
+
+.contato h2 {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.contato form {
+    max-width: 50rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contato form .inputBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contato form .inputBox input,
+.contato form textarea {
+    width: 97%;
+    padding: 1.5rem;
+    font-size: 20px;
+    color: #ffffff;
+    background: #1e2238;
+    border-radius: 20px;
+    margin: 0.7rem;
+}
+
+.contato form textarea {
+    resize: none;
+}
+
+.contato form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+    background: #2e80fa;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.contato form .btn:hover {
+    transform: scale(1.05);
+    background: #1350aa;
+}
+
+footer {
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    header .interface {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .navegacao a {
+        margin-left: 20px;
+        display: none;
+    }
+
+    .inicio .flex {
+        flex-direction: column-reverse;
+    }
+
+    .inicio .interface {
+        padding: 100px 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobreMim .interface {
+        padding: 50px 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobreMim .textoSobreMim, .sobreMim .imagemSobreMim img {
+        width: 100%;
+    }
+
+    .flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .projetos {
+        padding: 50px 20px;
+    }
+
+    .projetos .interface {
+        grid-template-columns: 1fr;
+        padding: 0;
+        gap: 1.5rem;
+    }
+
+    .contato {
+        padding: 50px 20px;
+    }
+
+    .contato form .inputBox {
+        flex-direction: column;
+    }
+
+    .contato form .inputBox input, .contato form textarea {
+        width: 100%;
+    }
+}
